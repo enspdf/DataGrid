@@ -24,13 +24,6 @@ namespace PersonaDataGridView
         {
             ClPersona oPersona = new ClPersona();
 
-            /*dr = dt.NewRow();
-            dr[oPersona.Nombre] = txtNombre.Text;
-            dr[oPersona.Identificacion] = txtidentificacion.Text;
-            dr[oPersona.FechaNacimiento] = dtFechaNacimiento.Text;
-            dt.Rows.Add(dr);
-            dgDatos.DataSource = dt;*/
-
             oPersona.Nombre = txtNombre.Text;
             oPersona.Identificacion = int.Parse(txtidentificacion.Text);
             oPersona.FechaNacimiento = dtFechaNacimiento.Text;

@@ -17,6 +17,7 @@ namespace PersonaDataGridView
         public Marcas()
         {
             InitializeComponent();
+            this.CenterToScreen();
             ClMarcas objetoMarcas;
             
 
@@ -36,8 +37,8 @@ namespace PersonaDataGridView
             listaMarcas.Add(objetoMarcas);
 
             cbMarca.DataSource = listaMarcas;
-            //cbMarca.DisplayMember = "Marca";
-            //cbMarca.ValueMember = "Codigo";
+            cbMarca.DisplayMember = "Marca";
+            cbMarca.ValueMember = "Codigo";
         }
 
         private void Marcas_Load(object sender, EventArgs e)
@@ -47,12 +48,12 @@ namespace PersonaDataGridView
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            
             ClMarcas marca = new ClMarcas();
-            clpc2 pc = new clpc2();
-            pc.Referencia = txtReferencia.Text;
-            marca.Marca = cbMarca.SelectedItem;
-            pc.Modelo = txtModelo.Text;
-            pc.Tipo = cbTipo.Text;
+            marca.Referencia = txtReferencia.Text;
+            marca.Marca = cbMarca.Text;
+            marca.Modelo = txtModelo.Text;
+            marca.Tipo = cbTipo.Text;
 
             listaMarcas.Add(marca);
             dgDatos.DataSource = null;

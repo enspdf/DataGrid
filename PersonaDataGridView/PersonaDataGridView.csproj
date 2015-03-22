@@ -45,7 +45,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClMarcas.cs" />
-    <Compile Include="clpc2.cs" />
     <Compile Include="ClPersona.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
