@@ -13,7 +13,9 @@ namespace PersonaDataGridView
     public partial class Marcas : Form
     {
         ClMarcas marcas = new ClMarcas();
+        
         List<ClMarcas> listaMarcas = new List<ClMarcas>();
+        List<ClMarcas> DatosGrid = new List<ClMarcas>();
         
         public Marcas()
         {
@@ -48,16 +50,16 @@ namespace PersonaDataGridView
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            List<ClMarcas> marcas = new List<ClMarcas>();
+
             ClMarcas marca = new ClMarcas();
             marca.Referencia = txtReferencia.Text;
             marca.Marca = cbMarca.Text;
             marca.Modelo = txtModelo.Text;
             marca.Tipo = cbTipo.Text;
 
-            marcas.Add(marca);
+            DatosGrid.Add(marca);
             dgDatos.DataSource = null;
-            dgDatos.DataSource = marcas;
+            dgDatos.DataSource = DatosGrid;
             txtReferencia.Text = "";
             txtModelo.Text = "";
         }
