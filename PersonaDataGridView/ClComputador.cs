@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PersonaDataGridView
 {
-    public class ClMarcas
+    public class ClComputador
     {
         public string Codigo;
         public string Marca { set; get; }

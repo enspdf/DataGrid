@@ -16,7 +16,7 @@ namespace PersonaDataGridView
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Marcas());
+            Application.Run(new Computador());
         }
     }
 }

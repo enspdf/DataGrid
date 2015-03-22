@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace PersonaDataGridView
 {
-    public partial class Form1 : Form
+    public partial class Persona : Form
     {
         List<ClPersona> ListaPersonas = new List<ClPersona>();
-        public Form1()
+        public Persona()
         {
             InitializeComponent();
             this.CenterToScreen();

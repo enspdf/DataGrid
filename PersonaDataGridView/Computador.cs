@@ -10,35 +10,35 @@ using System.Windows.Forms;
 
 namespace PersonaDataGridView
 {
-    public partial class Marcas : Form
+    public partial class Computador : Form
     {
-        ClMarcas marcas = new ClMarcas();
+        ClComputador Computadores = new ClComputador();
         
-        List<ClMarcas> listaMarcas = new List<ClMarcas>();
-        List<ClMarcas> DatosGrid = new List<ClMarcas>();
+        List<ClComputador> Marcas = new List<ClComputador>();
+        List<ClComputador> DatosGrid = new List<ClComputador>();
         
-        public Marcas()
+        public Computador()
         {
             InitializeComponent();
             this.CenterToScreen();
-            ClMarcas objetoMarcas;            
+            ClComputador objetoMarcas;            
 
-            objetoMarcas = new ClMarcas();
+            objetoMarcas = new ClComputador();
             objetoMarcas.Marca = "HP";
-            objetoMarcas.Codigo = "01";            
-            listaMarcas.Add(objetoMarcas);
+            objetoMarcas.Codigo = "01";
+            Marcas.Add(objetoMarcas);
 
-            objetoMarcas = new ClMarcas();
+            objetoMarcas = new ClComputador();
             objetoMarcas.Marca = "Intel";
-            objetoMarcas.Codigo = "02";            
-            listaMarcas.Add(objetoMarcas);
+            objetoMarcas.Codigo = "02";
+            Marcas.Add(objetoMarcas);
 
-            objetoMarcas = new ClMarcas();
+            objetoMarcas = new ClComputador();
             objetoMarcas.Marca = "SONY";
-            objetoMarcas.Codigo = "03";            
-            listaMarcas.Add(objetoMarcas);
+            objetoMarcas.Codigo = "03";
+            Marcas.Add(objetoMarcas);
 
-            cbMarca.DataSource = listaMarcas;
+            cbMarca.DataSource = Marcas;
             cbMarca.DisplayMember = "Marca";
             //cbMarca.ValueMember = "Codigo";
         }
@@ -51,7 +51,7 @@ namespace PersonaDataGridView
         private void btnGuardar_Click(object sender, EventArgs e)
         {
 
-            ClMarcas marca = new ClMarcas();
+            ClComputador marca = new ClComputador();
             marca.Referencia = txtReferencia.Text;
             marca.Marca = cbMarca.Text;
             marca.Modelo = txtModelo.Text;

@@ -1,6 +1,6 @@
 ﻿namespace PersonaDataGridView
 {
-    partial class Marcas
+    partial class Computador
     {
         /// <summary>
         /// Required designer variable.

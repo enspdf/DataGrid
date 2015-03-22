@@ -2,9 +2,9 @@ c:\users\sebastian-pc\documents\visual studio 2013\Projects\PersonaDataGridView\
 c:\users\sebastian-pc\documents\visual studio 2013\Projects\PersonaDataGridView\PersonaDataGridView\bin\Debug\PersonaDataGridView.exe
 c:\users\sebastian-pc\documents\visual studio 2013\Projects\PersonaDataGridView\PersonaDataGridView\bin\Debug\PersonaDataGridView.pdb
 c:\users\sebastian-pc\documents\visual studio 2013\Projects\PersonaDataGridView\PersonaDataGridView\obj\Debug\PersonaDataGridView.csprojResolveAssemblyReference.cache
-c:\users\sebastian-pc\documents\visual studio 2013\Projects\PersonaDataGridView\PersonaDataGridView\obj\Debug\PersonaDataGridView.Form1.resources
 c:\users\sebastian-pc\documents\visual studio 2013\Projects\PersonaDataGridView\PersonaDataGridView\obj\Debug\PersonaDataGridView.Properties.Resources.resources
 c:\users\sebastian-pc\documents\visual studio 2013\Projects\PersonaDataGridView\PersonaDataGridView\obj\Debug\PersonaDataGridView.csproj.GenerateResource.Cache
 c:\users\sebastian-pc\documents\visual studio 2013\Projects\PersonaDataGridView\PersonaDataGridView\obj\Debug\PersonaDataGridView.exe
 c:\users\sebastian-pc\documents\visual studio 2013\Projects\PersonaDataGridView\PersonaDataGridView\obj\Debug\PersonaDataGridView.pdb
-c:\users\sebastian-pc\documents\visual studio 2013\Projects\PersonaDataGridView\PersonaDataGridView\obj\Debug\PersonaDataGridView.Marcas.resources
+C:\Users\Sebastian-pc\documents\visual studio 2013\Projects\PersonaDataGridView\PersonaDataGridView\obj\Debug\PersonaDataGridView.Persona.resources
+C:\Users\Sebastian-pc\documents\visual studio 2013\Projects\PersonaDataGridView\PersonaDataGridView\obj\Debug\PersonaDataGridView.Computador.resources
