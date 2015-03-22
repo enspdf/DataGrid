@@ -98,5 +98,23 @@ namespace PersonaDataGridView
             txtModelo.Text = "";
             txtReferencia.Text = "";
         }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            if (txtReferencia.Text != "")
+            {
+                List<ClComputador> Busquedas = DatosGrid.Where(w => w.Referencia.Contains(txtReferencia.Text)).ToList();
+                dgDatos.DataSource = null;
+                dgDatos.DataSource = DatosGrid;
+            }
+            else if (txtModelo.Text != "")
+            {
+                
+            }
+            else
+            {
+
+            }
+        }
     }
 }
