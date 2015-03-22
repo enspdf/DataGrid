@@ -8,7 +8,7 @@ namespace PersonaDataGridView
 {
     public class ClMarcas
     {
-        public string Codigo { set; get; }
+        public string Codigo;
         public string Marca { set; get; }
         public string Referencia { set; get; }
         public string Modelo { set; get; }

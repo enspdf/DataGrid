@@ -75,6 +75,7 @@
             // 
             // cbMarca
             // 
+            this.cbMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMarca.FormattingEnabled = true;
             this.cbMarca.Location = new System.Drawing.Point(103, 43);
             this.cbMarca.Name = "cbMarca";
@@ -99,6 +100,7 @@
             // 
             // cbTipo
             // 
+            this.cbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTipo.FormattingEnabled = true;
             this.cbTipo.Items.AddRange(new object[] {
             "Escritorio",
@@ -173,24 +175,28 @@
             this.Ref.DataPropertyName = "Referencia";
             this.Ref.HeaderText = "Ref";
             this.Ref.Name = "Ref";
+            this.Ref.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Marca
             // 
             this.Marca.DataPropertyName = "Marca";
             this.Marca.HeaderText = "Marca";
             this.Marca.Name = "Marca";
+            this.Marca.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Modelo
             // 
             this.Modelo.DataPropertyName = "Modelo";
             this.Modelo.HeaderText = "Modelo";
             this.Modelo.Name = "Modelo";
+            this.Modelo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Tipo
             // 
             this.Tipo.DataPropertyName = "Tipo";
             this.Tipo.HeaderText = "Tipo";
             this.Tipo.Name = "Tipo";
+            this.Tipo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Marcas
             // 

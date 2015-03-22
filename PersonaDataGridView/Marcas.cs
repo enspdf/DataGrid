@@ -14,31 +14,31 @@ namespace PersonaDataGridView
     {
         ClMarcas marcas = new ClMarcas();
         List<ClMarcas> listaMarcas = new List<ClMarcas>();
+        
         public Marcas()
         {
             InitializeComponent();
             this.CenterToScreen();
-            ClMarcas objetoMarcas;
-            
+            ClMarcas objetoMarcas;            
 
             objetoMarcas = new ClMarcas();
-            objetoMarcas.Codigo = "01";
             objetoMarcas.Marca = "HP";
+            objetoMarcas.Codigo = "01";            
             listaMarcas.Add(objetoMarcas);
 
             objetoMarcas = new ClMarcas();
-            objetoMarcas.Codigo = "02";
             objetoMarcas.Marca = "Intel";
+            objetoMarcas.Codigo = "02";            
             listaMarcas.Add(objetoMarcas);
 
             objetoMarcas = new ClMarcas();
-            objetoMarcas.Codigo = "03";
             objetoMarcas.Marca = "SONY";
+            objetoMarcas.Codigo = "03";            
             listaMarcas.Add(objetoMarcas);
 
             cbMarca.DataSource = listaMarcas;
             cbMarca.DisplayMember = "Marca";
-            cbMarca.ValueMember = "Codigo";
+            //cbMarca.ValueMember = "Codigo";
         }
 
         private void Marcas_Load(object sender, EventArgs e)
@@ -48,16 +48,16 @@ namespace PersonaDataGridView
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            
+            List<ClMarcas> marcas = new List<ClMarcas>();
             ClMarcas marca = new ClMarcas();
             marca.Referencia = txtReferencia.Text;
             marca.Marca = cbMarca.Text;
             marca.Modelo = txtModelo.Text;
             marca.Tipo = cbTipo.Text;
 
-            listaMarcas.Add(marca);
+            marcas.Add(marca);
             dgDatos.DataSource = null;
-            dgDatos.DataSource = listaMarcas;
+            dgDatos.DataSource = marcas;
             txtReferencia.Text = "";
             txtModelo.Text = "";
         }
