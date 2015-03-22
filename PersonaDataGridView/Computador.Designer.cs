@@ -138,6 +138,7 @@
             this.btnModificar.TabIndex = 9;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
@@ -147,6 +148,7 @@
             this.btnEliminar.TabIndex = 10;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnConsultar
             // 
@@ -167,8 +169,10 @@
             this.Tipo});
             this.dgDatos.Location = new System.Drawing.Point(13, 183);
             this.dgDatos.Name = "dgDatos";
+            this.dgDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgDatos.Size = new System.Drawing.Size(444, 194);
             this.dgDatos.TabIndex = 12;
+            this.dgDatos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgDatos_CellClick);
             // 
             // Ref
             // 
@@ -198,7 +202,7 @@
             this.Tipo.Name = "Tipo";
             this.Tipo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // Marcas
+            // Computador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -216,7 +220,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtReferencia);
             this.Controls.Add(this.label1);
-            this.Name = "Marcas";
+            this.Name = "Computador";
             this.Text = "Computadores";
             this.Load += new System.EventHandler(this.Marcas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgDatos)).EndInit();

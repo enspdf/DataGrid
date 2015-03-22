@@ -63,5 +63,40 @@ namespace PersonaDataGridView
             txtReferencia.Text = "";
             txtModelo.Text = "";
         }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            int identificador = DatosGrid.FindIndex(C => C.Referencia == txtReferencia.Text);
+            ClComputador EditarComputadores = DatosGrid[identificador];
+            EditarComputadores.Modelo = txtModelo.Text;
+            EditarComputadores.Marca = cbMarca.Text;
+            EditarComputadores.Tipo = cbTipo.Text;
+
+            DatosGrid[identificador] = EditarComputadores;
+            dgDatos.DataSource = null;
+            dgDatos.DataSource = DatosGrid;
+        }
+
+        private void dgDatos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int identificador = e.RowIndex;
+            ClComputador ComputadorSeleccionado = ((ClComputador)(dgDatos.Rows[identificador].DataBoundItem));
+            txtReferencia.Text = ComputadorSeleccionado.Referencia;
+            txtModelo.Text = ComputadorSeleccionado.Modelo;
+            cbMarca.Text = ComputadorSeleccionado.Marca;
+            cbTipo.Text = ComputadorSeleccionado.Tipo;
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            int identificador = DatosGrid.FindIndex(C => C.Referencia == txtReferencia.Text);
+            ClComputador EliminarComputadores = DatosGrid[identificador];
+
+            DatosGrid.Remove(EliminarComputadores);
+            dgDatos.DataSource = null;
+            dgDatos.DataSource = DatosGrid;
+            txtModelo.Text = "";
+            txtReferencia.Text = "";
+        }
     }
 }
