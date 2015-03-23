@@ -168,6 +168,7 @@
             this.Marca,
             this.Modelo,
             this.Tipo});
+            this.dgDatos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgDatos.Location = new System.Drawing.Point(13, 183);
             this.dgDatos.Name = "dgDatos";
             this.dgDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;

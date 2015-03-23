@@ -8,3 +8,4 @@ c:\users\sebastian-pc\documents\visual studio 2013\Projects\PersonaDataGridView\
 c:\users\sebastian-pc\documents\visual studio 2013\Projects\PersonaDataGridView\PersonaDataGridView\obj\Debug\PersonaDataGridView.pdb
 C:\Users\Sebastian-pc\documents\visual studio 2013\Projects\PersonaDataGridView\PersonaDataGridView\obj\Debug\PersonaDataGridView.Persona.resources
 C:\Users\Sebastian-pc\documents\visual studio 2013\Projects\PersonaDataGridView\PersonaDataGridView\obj\Debug\PersonaDataGridView.Computador.resources
+C:\Users\Sebastian-pc\documents\visual studio 2013\Projects\PersonaDataGridView\PersonaDataGridView\obj\Debug\PersonaDataGridView.Universidad.resources
